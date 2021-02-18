@@ -17,23 +17,23 @@ const Example = () => {
 
   return (
     <div id="navbar">
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Bailey Dennis</NavbarBrand>
+      <Navbar color="light" light fixed="top" expand="md">
+        <NavbarBrand href="/">bailey dennis</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <Link className="nav-link" to="/Bio">About</Link>
+              <Link className="nav-link" to="/Bio">about</Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/Tech">Technologies</Link>
+              <Link className="nav-link" to="/Tech">technologies</Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/Projects">Projects</Link>
+              <Link className="nav-link" to="/Projects">projects</Link>
             </NavItem>
           </Nav>
           <NavbarText>
-            <Link className="nav-link" to="/Blog">Blog</Link>
+            <Link className="nav-link" to="/Blog">blog</Link>
           </NavbarText>
         </Collapse>
       </Navbar>

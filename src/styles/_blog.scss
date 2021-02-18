@@ -8,7 +8,19 @@ $linkColor: #68e1b6;
 $instructionBox: #ededed;
 $titleText: #ffcb9a;
 
+@keyframes fadeInAnimation { //here
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
+
 #blog {
+  animation: fadeInAnimation ease .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; //to here for fading.
   display: grid;
   align-items: center;
   padding: 5rem;

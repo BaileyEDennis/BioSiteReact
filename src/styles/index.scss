@@ -1,16 +1,24 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import 'blog';
 @import 'variables';
 
 body {
   background-color: $favColor;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-#navbar {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-}
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
 
+#homepage {
+  margin-top: 10rem;
+}
