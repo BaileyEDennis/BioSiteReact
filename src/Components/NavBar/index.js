@@ -16,7 +16,7 @@ const Example = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div id="navbar">
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">Bailey Dennis</NavbarBrand>
         <NavbarToggler onClick={toggle} />
