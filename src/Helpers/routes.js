@@ -9,13 +9,13 @@ import NotFound from '../Views/NotFound';
 
 export default function Routes() {
   return (
-      <Switch>
-        <Route exact path="/" component={() => <Home />} />
-        <Route exact path="/bio" component={() => <Bio />} />
-        <Route exact path="/tech" component={() => <Tech />} />
-        <Route exact path="/projects" component={() => <Projects />} />
-        <Route exact path='/blog' component={() => <Blog />}/>
-        <Route component={NotFound} />
-      </Switch>
+    <Switch>
+      <Route exact path="/" component={() => <Home />} />
+      <Route exact path="/bio" component={() => <Bio />} />
+      <Route exact path="/tech" component={() => <Tech />} />
+      <Route exact path="/projects" component={() => <Projects />} />
+      <Route exact path="/blog" component={() => <Blog />} />
+      <Route component={NotFound} />
+    </Switch>
   );
 }
