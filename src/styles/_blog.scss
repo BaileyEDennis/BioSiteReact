@@ -1,0 +1,134 @@
+$StyleFont: 'Alegreya', serif;
+$MainFont: 'Benne', serif;
+
+$blogBgColor: #2c3531;
+$cardColor: #f8ecf0;
+$shadowColor: black;
+$linkColor: #68e1b6;
+$instructionBox: #ededed;
+$titleText: #ffcb9a;
+
+#blog {
+  display: grid;
+  align-items: center;
+  padding: 5rem;
+
+  #smallHead {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: $StyleFont;
+    color: $titleText;
+  }
+
+  #bigHead {
+    margin-bottom: 1rem;
+    font-family: $StyleFont;
+    font-size: 8rem;
+    color: $titleText;
+  }
+
+  #mini-nav {
+    div {
+      border: 2px solid $titleText;
+      margin-right: 1rem;
+      padding: 5px;
+      box-shadow: 5px 5px black;
+      a {
+        color: $titleText;
+        background-color: #352c30;
+        text-decoration: none;
+      }
+    }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .single-post {
+    border: 1px solid black;
+    padding: 5rem;
+    width: 98%;
+    background-color: $cardColor;
+    margin-bottom: 5rem;
+    box-shadow: 12px 12px $shadowColor;
+
+    h5 {
+      position: relative;
+      top: -50px;
+      text-align: left;
+      font-family: $StyleFont;
+      font-size: 1rem;
+    }
+
+    .title {
+      font-family: $StyleFont;
+      font-weight: 600;
+      text-align: justify;
+      background-color: $cardColor;
+      margin-left: 0%;
+      margin-right: auto;
+      height: 4rem;
+    }
+
+    .subtitle {
+      font-family: $StyleFont;
+      font-weight: 200;
+      font-size: 1.2rem;
+      text-align: justify;
+      background-color: $cardColor;
+      margin-left: 0%;
+      margin-right: auto;
+      height: 4rem;
+    }
+
+    .card-img-top {
+      width: 100%;
+      max-height: 26rem;
+      object-fit: cover;
+      overflow: hidden;
+      object-position: 100% 0; //move image position in x direction.
+      object-position: 0 5%; //move image position in y direction.
+    }
+
+    #content {
+      text-align: justify;
+      margin-top: 1rem;
+      font-family: $MainFont;
+      font-weight: 400;
+      font-size: 1.2rem;
+      .instructions {
+        border-left: thick solid $linkColor;
+        background-color: $instructionBox;
+      }
+      a {
+        align-items: left;
+        font-family: $StyleFont;
+        font-size: 1.1rem;
+        color: $linkColor;
+        text-decoration: none;
+      }
+      a:hover {
+        color: lightpink;
+      }
+    }
+
+    #icons {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+      #category {
+        a {
+          align-items: left;
+          font-family: $StyleFont;
+          font-size: 1.1rem;
+          color: black;
+          text-decoration: none;
+        }
+        a:hover {
+          color: $linkColor;
+        }
+      }
+    }
+  }
+  background-color: $blogBgColor;
+}
